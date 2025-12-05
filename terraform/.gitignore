@@ -1,0 +1,19 @@
+cat > .gitignore << 'EOF'
+# Terraform local cache
+.terraform/
+terraform/.terraform/
+
+# Terraform state files
+*.tfstate
+*.tfstate.*
+*.tfstate.backup
+
+# Local / sensitive variable files
+terraform.tfvars
+*.tfvars
+*.tfvars.json
+
+# Crash logs
+crash.log
+crash.*.log
+EOF
